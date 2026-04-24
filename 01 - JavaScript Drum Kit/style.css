@@ -34,20 +34,21 @@ main {
 
 button {
     border: none;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font: inherit;
     width: 70px;
     aspect-ratio: 1;
-    box-shadow: 0 0 2px 3px black;
+    border: 4px solid black;
     cursor: pointer;
     flex-shrink: 0;
-    transition: all .3s;
+    transition: all .07s;
 }
 
-button:active {
-    box-shadow: #ffd700ab 0px 0px 4px 2px;
+button.active {
+    border: 2px solid gold;
     transform: translateY(-3px);
+    scale: 1.1;
 }
 
 button h2 {
