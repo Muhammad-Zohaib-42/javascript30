@@ -12,3 +12,49 @@ body {
     height: 100%;
     width: 100%;
 }
+
+main {
+    height: 100dvh;
+    background-image: url("./assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font: inherit;
+    width: 70px;
+    aspect-ratio: 1;
+    box-shadow: 0 0 2px 3px black;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all .3s;
+}
+
+button:active {
+    box-shadow: #ffd700ab 0px 0px 4px 2px;
+    transform: translateY(-3px);
+}
+
+button h2 {
+    font-weight: normal;
+}
+
+button span {
+    font-size: 12px;
+    color: gold;
+}
